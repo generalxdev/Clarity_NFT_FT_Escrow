@@ -1,0 +1,11 @@
+[project]
+name = "ft"
+requirements = []
+analysis = ["check_checker"]
+[contracts.ft-trait]
+path = "contracts/ft-trait.clar"
+depends_on = []
+
+[contracts.refer-reward-ft]
+path = "contracts/refer-reward-ft.clar"
+depends_on = ["ft-trait"]
